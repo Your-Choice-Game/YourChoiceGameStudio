@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Choice Game Studio - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Orbitron', sans-serif;
+            background-color: #000;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        .main-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .main-section > div {
+            position: relative;
+            z-index: 10;
+        }
+
+        .terms-box-fallback {
+            margin: 0 auto 4rem; /* Increased bottom margin */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 3rem; /* Large font size */
+            font-weight: bold; /* Bold text to match the image */
+            font-size: 72px;
+            background: -webkit-linear-gradient(#0094ff, #ff0000);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .game-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 80px;
+            padding: 30px;
+        }
+
+        .game-tile {
+            background: linear-gradient(to bottom, #0000FF, #ADD8E6);
+            color: white;
+            padding: 25px;
+            border-radius: 25px;
+            text-align: center;
+        }
+
+            .game-tile img {
+                padding: 25px;
+                border-radius: 25px;
+                /*  height:50%;
+                width:50%; */
+            }
+
+            .game-tile button {
+                background-color: #FFFFFF;
+                color: #0000FF;
+                padding: 5px 10px;
+                border: none;
+                border-radius: 5px;
+            }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="fixed top-0 w-full bg-black bg-opacity-80 z-50 shadow-md">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-white">Your Choice Game Studio</div>
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="hover:text-yellow-400 text-white">Home</a></li>
+                <li><a href="Game.html" class="hover:text-yellow-400 text-white">Games</a></li>
+                <li><a href="TermsandConditions.html" class="hover:text-yellow-400 text-white">Terms and Conditions</a></li>
+                <li><a href="PrivacyPolicy.html" class="hover:text-yellow-400 text-white">Privacy Policy</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Games Section -->
+    <section class="py-16 bg-gray-900 text-white font-sans" style="background-image: url('Images/Website.jpg'); margin-top: 60px;">
+        <div class="container mx-auto px-4 py-8">
+            <div class="terms-box-fallback">
+                <h2>Play Our Games</h2>
+            </div>
+            <div class="game-grid">
+                <div class="game-tile">
+                    <img src="Images/Mahjong App.jpg" alt="Majestic-Mahjong">
+                    <p>A super block game is a type of puzzle video game where players manipulate different types of blocks or shapes to fit into a predefined grid or pattern...</p>
+                    <button>Google Play</button>
+                </div>
+                <div class="game-tile">
+                    <img src="super-survival.jpg" alt="Super Survival">
+                    <p>Super Survival is a comprehensive survival adventure game in a variety of challenging dynamic environments where each survival experience is unique...</p>
+                    <button>Google Play</button>
+                </div>
+                <div class="game-tile"><img src="super-candy-crush.jpg" alt="Super Candy Crush"><p>Super Candy Crush is a delightful and immersive match-3 puzzle game that offers endless entertainment and challenging gameplay mechanics...</p><button>Google Play</button></div>
+                <div class="game-tile"><img src="super-candy-saga.jpg" alt="Super Candy Saga"><p>Super Candy Saga is an action-packed game where players must choose different abilities to defeat enemies and complete each level...</p><button>Google Play</button></div>
+                <div class="game-tile"><img src="super-hunter-saga.jpg" alt="Super Hunter Saga"><p>Super Hunter Saga is an action-packed game where players must choose different abilities to defeat enemies and complete each level...</p><button>Google Play</button></div>
+                <div class="game-tile"><img src="super-bubble-shooter.jpg" alt="Super Bubble Shooter"><p>Super Bubble Shooter is a game based on the classic bubble-shooting mechanics where players aim to match colored bubbles to pop them off the screen...</p><button>Google Play</button></div>
+                <div class="game-tile"><img src="super-words-puzzle.jpg" alt="Super Words Puzzle"><p>Super Words Puzzle is a fun way to test vocabulary and logical thinking with hours of fun gameplay connecting mind-challenging levels...</p><button>Google Play</button></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p>@ 2025 Your Choice Game Studio. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
